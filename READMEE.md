@@ -23,3 +23,9 @@ $ pm2 logs
 ### **Start an app**
 The simplest way to start, daemonize and monitor your application is by using this command line:
 $ pm2 start app.js
+
+
+## **Updating PM2**
+``npm install pm2@latest -g1``
+Then update the in-memory PM2 :
+pm2 update
