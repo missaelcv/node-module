@@ -20,5 +20,10 @@ function Escribir(ruta, contenido, cb){
 
 }
 
-Escribir (__dirname + '/archivo1.txt','soy el tema nuevo', console.log());
+function Borrar(ruta,cb){
+    fs.unlink(ruta, cb);
+}
+
+Borrar(__dirname + '/archivo1.txt', console.log);
+//Escribir (__dirname + '/archivo1.txt','soy el tema nuevo', console.log());
 //Leer (__dirname + '/archivo.txt')
